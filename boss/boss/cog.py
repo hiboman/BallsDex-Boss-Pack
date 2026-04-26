@@ -16,6 +16,7 @@ from bd_models.models import balls as balls_cache
 from bd_models.models import specials
 from ballsdex.core.utils.transformers import BallTransform, BallInstanceTransform
 from ballsdex.core.utils import checks
+from ballsdex.settings import settings
 
 if TYPE_CHECKING:
     from ballsdex.core.bot import BallsDexBot
