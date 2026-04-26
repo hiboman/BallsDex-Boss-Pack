@@ -280,7 +280,7 @@ class BossCog(commands.GroupCog, name="boss"):
             
             # Prepare boss image file
             extension = ball.collection_card.name.split(".")[-1]
-            file_location = "./admin_panel/media/" + ball.collection_card.name
+            file_location = str(ball.collection_card.path)
             file = discord.File(file_location, filename=f"boss.{extension}")
             
             # Send announcement message with join button and boss image
@@ -556,7 +556,7 @@ class BossCog(commands.GroupCog, name="boss"):
         
         # Prepare boss image file for attack phase
         extension = self.bossball.wild_card.name.split(".")[-1]
-        file_location = "./admin_panel/media/" + self.bossball.wild_card.name
+        file_location = str(self.bossball.wild_card.path)
         file = discord.File(file_location, filename=f"boss.{extension}")
         
         await interaction.channel.send(
@@ -589,7 +589,7 @@ class BossCog(commands.GroupCog, name="boss"):
         
         # Prepare boss image file for defend phase
         extension = self.bossball.wild_card.name.split(".")[-1]
-        file_location = "./admin_panel/media/" + self.bossball.wild_card.name
+        file_location = str(self.bossball.wild_card.path)
         file = discord.File(file_location, filename=f"boss.{extension}")
         
         await interaction.channel.send(
