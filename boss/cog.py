@@ -25,7 +25,7 @@ log = logging.getLogger("ballsdex.packages.boss")
 Interaction = discord.Interaction["BallsDexBot"]
 
 # Configuration constants
-SHINYBUFFS = [1000,1000] # Shiny Buffs
+SHINYBUFFS = [2000,2000] # Shiny Buffs
 # ATK, HP
 MAXSTATS = [10000,10000] # Max stats a card is limited to (before buffs)
 # ATK, HP
