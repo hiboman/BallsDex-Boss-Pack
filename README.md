@@ -43,7 +43,6 @@ Add the following configuration:
 location = "git+https://github.com/MoOfficial0000/BossPackageBD.git"
 path = "boss"
 enabled = true
-editable = false
 ```
 
 **Example of multiple packages:**
@@ -54,14 +53,12 @@ editable = false
 location = "git+https://github.com/example/other-package.git"
 path = "other"
 enabled = true
-editable = false
 
 # Boss Package
 [[ballsdex.packages]]
 location = "git+https://github.com/MoOfficial0000/BossPackageBD.git"
 path = "boss"
 enabled = true
-editable = false
 ```
 
 ### 3 — Rebuild and start the bot
